@@ -1,0 +1,26 @@
+{
+  "header": "Список заявок",
+  "fullInfo": {
+    "header": "Информация о заявке",
+    "create": {
+      "header": "Создание счета",
+      "account": "Счет: {{account}}",
+      "accountType": "Тип счета: {{accountType}}",
+      "bic": "Банк: {{bic}}"
+    },
+    "update": {
+      "header": "Изменение счета",
+      "accountChange": "Смена счета с {{oldAccount}} на {{newAccount}}",
+      "accountBicChange": "Смена банка с {{oldBic}} на {{newBic}}",
+      "accountType": "Тип счета: {{accountType}}"
+    },
+    "docs": {
+      "attach": {
+        "header": "Прикрепление документа",
+        "dndText": "Переместите документы сюда или нажмите для того, чтобы выбрать документы"
+      },
+      "header": "Прикрепленные документы"
+    },
+    "rejectText": "Причина отклонения заявки:"
+  }
+}

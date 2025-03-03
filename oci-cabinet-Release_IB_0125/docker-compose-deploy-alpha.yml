@@ -1,0 +1,14 @@
+version: '3.5'
+
+services:
+  alpha:
+    image: "${DOCKER_IMAGE_SHA}"
+    ports:
+      - 8055:80
+    restart: always
+    networks:
+      - ocinet
+
+networks:
+  ocinet:
+    name: ocinet

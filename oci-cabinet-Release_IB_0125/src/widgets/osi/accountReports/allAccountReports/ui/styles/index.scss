@@ -1,0 +1,98 @@
+.all-accounts-reports-widget {
+  .reports-table {
+    @apply w-full h-full flex flex-col items-center justify-center;
+
+    .header {
+      @apply grid grid-cols-12 grid-rows-1 w-full border border-gray-400;
+
+      :nth-child(1).cell {
+        grid-column: 4 / span 3;
+      }
+
+      .cell {
+        @apply flex justify-center items-center border border-gray-400 border-y-0 border-r-0;
+        grid-column: span 3;
+      }
+    }
+
+    .body {
+      @apply flex flex-col items-center justify-center w-full border border-gray-400 border-t-0;
+
+      :nth-last-child(1).row {
+        @apply border-b-0;
+
+        .cell {
+          @apply border-b-0;
+        }
+      }
+
+      .row {
+        @apply grid grid-cols-12 w-full border-y-0;
+        grid-template-rows: minmax(40px, 60px) auto;
+
+        &__main-info {
+          @apply grid grid-cols-12 grid-rows-1 place-items-stretch;
+          grid-column: 1 / -1;
+
+          :nth-child(1).cell {
+            @apply border-l-0;
+          }
+
+          .cell {
+            @apply flex justify-center items-center border border-gray-400 border-t-0 border-r-0 border-b-0;
+            grid-column: span 3;
+          }
+        }
+
+        &__accounts {
+          @apply grid grid-cols-12 border-t border-gray-400;
+          grid-column: 1 / -1;
+          grid-template-rows: minmax(20px, 40px) auto;
+
+          .header {
+            @apply grid grid-cols-12 grid-rows-1 border border-gray-400 border-t-0 border-x-0;
+            grid-column: 1 / -1;
+
+            :nth-child(1).cell {
+              grid-column: 4 / span 3;
+            }
+
+            :nth-last-child(1).cell {
+              @apply border-r;
+            }
+
+
+            .cell {
+              @apply flex justify-center items-center;
+              grid-column: span 3;
+            }
+          }
+
+          .body {
+            @apply grid grid-cols-12 w-full place-items-stretch border border-gray-400 border-t-0 border-x-0;
+            grid-auto-rows: 40px;
+            grid-column: 1 / -1;
+
+            .row {
+              @apply grid grid-cols-12 grid-rows-1 border border-gray-400 border-y-0 border-x-0;
+              grid-column: 1 / -1;
+
+              :nth-child(1).cell {
+                @apply border-l-0;
+              }
+
+              :nth-last-child(1).cell {
+                @apply border-r;
+              }
+
+              .cell {
+                @apply flex justify-center items-center border border-gray-400 border-y-0 border-r-0;
+                grid-column: span 3;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

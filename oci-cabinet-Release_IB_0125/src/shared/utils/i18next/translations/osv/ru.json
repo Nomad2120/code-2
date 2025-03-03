@@ -1,0 +1,29 @@
+{
+  "initialSaldo": "Начальное сальдо абонентов",
+  "table": {
+    "flatNumber": "Номер помещения",
+    "owner": "Собственник помещения",
+    "saldo": "Сальдо"
+  },
+  "tableByAbonent": {
+    "number": "№ помещения",
+    "abonentName": "ФИО собственника",
+    "owner": "Владелец",
+    "totalBegin": "Сальдо на начало",
+    "totalDebt": "Начислено",
+    "totalFixes": "Корректировки",
+    "totalKredit": "Оплачено",
+    "totalFine": "Пеня",
+    "totalEnd": "Долг",
+    "period": "Период",
+    "service": "Услуга",
+    "total": "Общая сумма",
+    "footer": {
+      "startOsv": "Сальдо на начало:",
+      "accrued": "Начислено:",
+      "fixes": "Корректировки:",
+      "payed": "Оплачено:",
+      "debt": "Долг:"
+    }
+  }
+}

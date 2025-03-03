@@ -1,0 +1,18 @@
+.details-grid {
+
+  &.MuiDataGrid-root {
+    min-height: calc(100% - 16px);
+  }
+
+  .comment-cell, .amount-cell {
+    .MuiDataGrid-editInputCell {
+      input {
+        text-align: start;
+      }
+    }
+  }
+
+  .amount-cell.MuiDataGrid-cell.MuiDataGrid-cell--editing:focus-within:has(> .MuiInputBase-root.error) {
+    outline-color: red;
+  }
+}

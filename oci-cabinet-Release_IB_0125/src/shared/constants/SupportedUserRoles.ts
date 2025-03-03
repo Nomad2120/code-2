@@ -1,0 +1,2 @@
+export const SUPPORTED_USER_ROLES = ['CHAIRMAN', 'ABONENT', 'OPERATOR'];
+export const ADMIN_ROLE = 'ADMIN';

@@ -1,0 +1,29 @@
+{
+  "initialSaldo": "Абоненттердің бастапқы балансы",
+  "table": {
+    "flatNumber": "Бөлменің нөмірі",
+    "owner": "Үй-жайдың иесі",
+    "saldo": "Баланс"
+  },
+  "tableByAbonent": {
+    "number": "Бөлме нөмірі",
+    "abonentName": "Иесінің аты",
+    "owner": "Меншік иесі",
+    "totalBegin": "Басында баланс",
+    "totalDebt": "Есептелген",
+    "totalFixes": "Түзетулер",
+    "totalKredit": "Ақылы",
+    "totalFine": "Пенья",
+    "totalEnd": "Міндет",
+    "period": "Кезең",
+    "service": "Қызмет",
+    "total": "Жалпы сома",
+    "footer": {
+      "startOsv": "Басындағы баланс:",
+      "accrued": "Есептелген:",
+      "fixes": "Түзетулер:",
+      "payed": "Ақылы:",
+      "debt": "Міндеті:"
+    }
+  }
+}

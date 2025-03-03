@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./libs/material-ui.css";
+@import "widgets.scss";
+
+
+@import "bootstrap/dist/css/bootstrap.css";
+@import "../../shared/side-home/style/App.scss";
+
+
+.osis-wrapper {
+  //background: linear-gradient(40deg, rgba(118,3,210,1) 0%, rgba(210,148,237,1) 85%, rgba(251,190,246,1) 100%);
+}
+
+.feature-list__card:not(style) {
+  text-align: center;
+  padding: 24px 40px 24px;
+  background-color: rgba(33, 43, 54, 0.5);
+  height: 100%;
+
+  @media (max-width: 1536px) {
+    padding: 8px 24px 16px;
+  }
+}
+
+.home-layout__footer:not(style) {
+  padding-bottom: 60px;
+  text-align: center;
+  position: relative;
+  background-color: #fff;
+}
+
+.osiCard {
+  &-wrapper {
+    @apply h-full w-full cursor-pointer;
+    border-radius: 10px;
+  }
+
+  &-element {
+    @apply h-full w-full flex flex-col text-center justify-center backdrop-blur;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+  }
+}

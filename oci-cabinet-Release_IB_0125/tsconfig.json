@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./build",
+    "target": "esnext",
+    "module": "esnext",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    /* Bundler mode */
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    /* Linting */
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    /* other */
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": [
+      "reflect-metadata",
+      "jest",
+      "vite/client",
+      "cypress"
+    ],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": [
+    "./src",
+    "cypress"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "./src/**/*.jsx",
+    "./src/**/*.js"
+  ],
+  "extends": "./tsconfig.paths.json",
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}

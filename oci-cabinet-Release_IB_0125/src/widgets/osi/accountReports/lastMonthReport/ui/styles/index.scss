@@ -1,0 +1,117 @@
+@import 'view';
+
+.account-reports {
+  $template-columns: 35px 50px 150px 150px 1fr 1fr;
+
+  & .items-grid {
+    @apply w-full;
+
+    & .header {
+      @apply h-[40px] grid content-center justify-center;
+      grid-template-columns: $template-columns;
+
+      & .cell {
+        @apply flex justify-center items-center;
+      }
+
+      :nth-child(1) {
+        grid-column-start: 3;
+        grid-column-end: 4;
+      }
+
+      :nth-child(2) {
+        grid-column-start: 4;
+        grid-column-end: 5;
+      }
+
+      :nth-child(3) {
+        grid-column-start: 5;
+        grid-column-end: 6;
+      }
+    }
+
+    & .body {
+      @apply w-full gap-y-[10px] flex flex-col;
+
+      & .item-row {
+        @apply grid content-center justify-center;
+        grid-template-columns: $template-columns;
+        grid-template-rows: auto 1fr;
+
+        & .item-cell {
+          @apply flex h-full w-full items-center justify-center;
+        }
+
+        & .details-grid {
+          @apply flex flex-col w-full;
+          grid-area: 2/1/2/7;
+
+          & .header {
+            @apply h-[40px] grid;
+            grid-template-columns: $template-columns;
+
+            & .cell {
+              @apply flex justify-center items-center;
+
+              & .MuiInputBase-root {
+                border-radius: 0;
+              }
+            }
+
+            :nth-child(1) {
+              grid-column-start: 3;
+              grid-column-end: 4;
+            }
+
+            :nth-child(2) {
+              grid-column-start: 4;
+              grid-column-end: 7;
+            }
+          }
+
+          & .body {
+            @apply w-full;
+
+            & .row {
+              @apply grid;
+              grid-template-columns: $template-columns;
+
+              & .cell {
+                @apply flex justify-center items-center border-y border-black;
+              }
+
+              :nth-child(1) {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                @apply border-l;
+              }
+
+              :nth-child(2) {
+                grid-column-start: 3;
+                grid-column-end: 4;
+                @apply border-l;
+              }
+
+              :nth-child(3) {
+                grid-column-start: 4;
+                grid-column-end: 7;
+                @apply border-x;
+              }
+            }
+
+            & .add-row {
+              @apply h-[40px] w-full grid;
+              grid-template-columns: $template-columns;
+
+              & .add-button {
+                @apply w-full h-full;
+                grid-column-start: 3;
+                grid-column-end: 7;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1308 @@
+.side-app {
+  font-size: 22px;
+  width: 100%;
+  height: max-content;
+  background-color: #F6F6F6;
+  font-family: 'Public Sans', sans-serif;
+  overflow-x: hidden !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.side-body {
+  background-color: #F6F6F6 !important;
+  font-family: 'Public Sans', sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 100% !important;
+}
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.faq-text {
+  font-size: 20px;
+}
+
+.close-btn {
+  background: var(--bs-btn-close-bg) !important;
+  width: 15px;
+  height: 15px;
+  color: var(--bs-btn-close-color);
+}
+
+.map-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: brightness(1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: backdrop-filter 0.2s;
+  visibility: hidden;
+
+  & span {
+    color: white;
+  }
+
+  &.visible {
+    visibility: visible;
+    backdrop-filter: brightness(0.2);
+    transition: backdrop-filter 0.2s, visible 0.2s;
+  }
+}
+
+.tutorial-wrapper {
+  padding-inline: 16px;
+  padding-block: 16px;
+  width: 100%;
+  height: 400px;
+  margin-block-end: 40px;
+
+  #tutorial-player {
+    width: 100%;
+    height: 100%;
+
+    .react-player__preview, iframe {
+      border-radius: 16px;
+    }
+  }
+}
+
+.tutorial-modal {
+  width: 90%;
+  max-width: 710px;
+  margin-inline: auto !important;
+}
+
+#request-phone {
+  color: rgb(0, 171, 85);
+}
+
+.notify-modal {
+  & .modal-content {
+    border-radius: 24px;
+  }
+
+  & .modal-header {
+    border: none;
+    padding-block: 0.5rem;
+
+    & .btn-close:focus {
+      box-shadow: none;
+    }
+  }
+
+  & .modal-body {
+    padding: 1rem;
+    padding-top: 0.5rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  & .content-text {
+    font-size: 22px;
+  }
+}
+
+.abonent-type-modal {
+  #send-request {
+    height: 56px;
+    width: 50%;
+  }
+}
+
+.abonent-type-check {
+  @apply h-[50px] px-1;
+  border: 2px solid #9A9A9A;
+  border-radius: 25px;
+  display: grid;
+  place-items: center;
+
+
+  label {
+    @apply text-black w-100 h-100 text-center;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+  }
+
+  &.checked {
+    border: 2px solid #00AB55;
+
+    label {
+      color: #00AB55;
+    }
+  }
+
+  input {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media (max-width: 424px) {
+  .main-banner-card:not(style) {
+    margin-top: 6.5rem !important;
+
+    & .heading-wrapper {
+      padding-inline: 0.3rem !important;
+    }
+
+    & .heading {
+      padding-inline: 0 !important;
+      font-size: 23px !important;
+    }
+  }
+
+  .main-banner-btns-title {
+    width: 56px !important;
+  }
+
+  button#bannerBtns {
+    min-width: 48px !important;
+    max-width: 67px !important;
+    flex: 1 0 0;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .main-banner-card {
+    & .heading-wrapper {
+      text-align: center;
+    }
+  }
+
+  .tutorial-wrapper {
+    padding-inline: 0;
+    padding-block: 0;
+  }
+
+  .header {
+    background-color: transparent !important;
+  }
+
+  .logo {
+    width: 108px !important;
+  }
+
+  .heading {
+    font-size: 24px !important;
+  }
+
+  .disclaimer {
+    font-size: 22px;
+  }
+
+  .language-buttons {
+    font-size: 17px !important;
+  }
+
+  .main-banner-btns-title {
+    margin-right: 2px !important;
+  }
+
+  #bannerBtns {
+    font-size: 12px !important;
+    height: 38px !important;
+    width: 59px !important;
+    font-weight: 600 !important;
+  }
+
+  .about-container {
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+  }
+
+  .about-card-gaps {
+    margin-top: 12px !important;
+  }
+
+  .about-title {
+    font-size: 20px !important;
+  }
+
+  .about-numbers {
+    font-size: 16px !important;
+  }
+
+  .about-shorts {
+    font-size: 13px !important;
+  }
+
+  .about-btn {
+    min-height: 44px !important;
+    min-width: 30px !important;
+  }
+
+  .our-benefits-heading {
+    font-size: 18px !important;
+  }
+
+  .text-content {
+    font-size: 13px !important;
+  }
+
+  .card-text {
+    font-size: 13px !important;
+  }
+
+  .btn-custom {
+    font-size: 17px !important;
+  }
+
+  #contactUs {
+    max-width: 100% !important;
+    margin-top: 0px !important;
+    padding-top: 10px !important;
+    height: 46px !important;
+    font-weight: 500 !important;
+  }
+
+  .img-coins {
+    width: 40% !important;
+  }
+
+  .img-xs {
+    max-width: 1.5rem;
+  }
+
+  .fill {
+    height: auto !important;
+  }
+
+  .main-banner-btn-contactUs {
+    margin-top: 1rem !important;
+  }
+
+  .text-container {
+    font-size: 13px;
+  }
+
+  .our-benefits-img {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .montly-ben-icons {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .monthly-ben-titles {
+    font-size: 18px !important;
+    width: 100% !important;
+  }
+
+  .request-form-icon-wrapper {
+    width: 7% !important;
+  }
+
+  .icon-container {
+    margin-top: 0px !important;
+  }
+
+  .icon-0.icon {
+    margin-bottom: 70px !important;
+  }
+
+  .icon-1.icon {
+    margin-bottom: 100px !important;
+  }
+
+  .icon-2.icon {
+    margin-bottom: 100px !important;
+  }
+
+  .faq-text-content {
+    width: 250px !important;
+  }
+
+  .map-iframe iframe {
+    height: 360px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .header {
+    background-color: transparent !important;
+  }
+
+  .main-banner-btns-title {
+    font-size: 11px !important;
+    line-height: 15.4px !important;
+    margin-right: 5px !important;
+  }
+
+  #bannerBtns {
+    font-size: 12px !important;
+    height: 38px !important;
+    flex: 1 0 0;
+    min-width: 50px;
+    max-width: 130px;
+    margin: 3px !important;
+    padding: 0 !important;
+    font-weight: 600 !important;
+  }
+
+  .about-container {
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+  }
+
+  .about-btn {
+    min-height: 62px !important;
+    min-width: 44px !important;
+  }
+
+  .ourbenefits-download-btns {
+    font-size: 17px !important;
+    background-color: #00AB55;
+    border: 1px solid #00AB55;
+    border-radius: 24px;
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+    margin-top: 1rem;
+    padding: 0.8rem 0rem 0.8rem 2rem;
+    width: 100% !important;
+    height: 46px !important;
+  }
+
+  .our-benefits-btn-block {
+    display: block !important;
+  }
+
+  .main-banner-card {
+    margin: 10rem 1rem 1rem 1rem !important;
+    padding: 14px !important;
+  }
+
+  .main-banner-btns-container {
+    margin-bottom: 16px !important;
+  }
+
+  .fill {
+    height: auto !important;
+  }
+
+  .main-banner-btn-contactUs {
+    margin-top: 1rem;
+  }
+
+  .text-container {
+    font-size: 13px;
+  }
+
+  .our-benefits-img {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .icon {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .montly-ben-icons {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .form-submit {
+    height: 46px !important;
+    margin-bottom: 12px !important;
+    padding: 0 !important;
+    padding-left: 60px !important;
+  }
+
+  .form-submit::placeholder {
+    font-size: 15px !important;
+  }
+
+  #send-request {
+    height: 46px !important;
+  }
+
+  .faq-numbers {
+    font-size: 18px !important;
+  }
+
+  .faq-titles {
+    font-size: 18px !important;
+  }
+
+  .faq-text {
+    font-size: 13px !important;
+  }
+
+  .faq-download-btns {
+    display: block;
+    margin-inline: auto !important;
+    width: 60% !important;
+  }
+
+  .footer-img {
+    height: 16px !important;
+    width: 16px !important;
+  }
+
+  .footer-first-column {
+    padding-bottom: 1rem !important;
+  }
+
+  .map-iframe iframe {
+    height: 360px !important;
+  }
+
+  .modal-custom .modal-dialog {
+    max-width: 377px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .modal-custom .modal-content {
+    height: 500px !important;
+    border-radius: 24px !important;
+  }
+
+  .modal-body {
+    border-radius: 24px !important;
+    padding: 16px !important;
+  }
+
+  .modal-form-text {
+    margin-bottom: 8px !important;
+    margin-top: 8px !important;
+    width: 100% !important;
+  }
+
+  .modal-form-info-text {
+    margin-top: 16px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .header {
+    background-color: transparent !important;
+  }
+
+  .ourbenefits-download-btns {
+    font-size: 17px !important;
+    background-color: #00AB55;
+    border: 1px solid #00AB55;
+    border-radius: 24px;
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+    margin-top: 1rem;
+    width: 100% !important;
+    display: block !important;
+  }
+
+  .our-benefits-btn-block {
+    display: block !important;
+  }
+
+  .img-md {
+    max-width: fit-content;
+  }
+
+  .main-banner-card {
+    margin: 10rem 1rem 1rem 1rem !important;
+  }
+
+  .main-banner-btns-container {
+    margin-bottom: 24px !important;
+  }
+
+  #bannerBtns {
+    font-size: 16px !important;
+    height: 50px !important;
+    //width: 100px !important;
+    margin: 8px !important;
+    padding: 0 !important;
+    font-weight: 600 !important;
+    flex: 1 0 0;
+    min-width: 50px;
+    max-width: 155px;
+  }
+
+  .about-title {
+    font-size: 24px !important;
+  }
+
+  .about-numbers {
+    font-size: 18px !important;
+  }
+
+  .about-shorts {
+    font-size: 18px !important;
+  }
+
+  .about-btn {
+    min-height: 100px !important;
+  }
+
+  .fill {
+    height: auto !important;
+  }
+
+  .main-banner-btn-contactUs {
+    margin-top: 1rem !important;
+  }
+
+  .our-benefits-img {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .montly-ben-icons {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .icon-container {
+    margin-top: 24px !important;
+  }
+
+  .icon-0.icon {
+    margin-top: 60px !important;
+  }
+
+  .icon-1.icon {
+    margin-top: 70px !important;
+  }
+
+  .icon-2.icon {
+    margin-top: 110px !important;
+  }
+
+  .faq-download-btns {
+    display: block;
+    margin-inline: auto !important;
+    width: 60% !important;
+  }
+
+  .faq-text {
+    font-size: 18px !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .main-banner-btns-title {
+    font-size: 14px !important;
+    line-height: 15.4px !important;
+    margin-right: 14px;
+  }
+
+  #bannerBtns {
+    font-size: 16px !important;
+    height: 38px !important;
+    margin: 4px !important;
+    padding: 0 !important;
+    flex: 1 0 0;
+  }
+
+  .card-text {
+    font-size: 18px !important;
+  }
+
+  .monthly-ben-titles {
+    font-size: 18px !important;
+    width: 80% !important;
+  }
+
+  .about-title {
+    font-size: 24px !important;
+  }
+
+  .about-btn {
+    min-height: 100px !important;
+  }
+
+  .fill {
+    height: auto !important;
+  }
+
+  .main-banner-btn-contactUs {
+    margin-top: 1rem;
+  }
+
+  .icon-container {
+    margin-top: 18px !important;
+  }
+
+  .icon-0.icon {
+    margin-top: 28px !important;
+  }
+
+  .icon-1.icon {
+    margin-top: 70px !important;
+  }
+
+  .icon-2.icon {
+    margin-top: 80px !important;
+  }
+
+  .faq-text {
+    font-size: 18px !important;
+  }
+
+  #contactUs {
+    width: 90% !important;
+  }
+
+  .contactUsCoins {
+    width: 100% !important;
+    height: auto !important;
+    padding-top: 10px !important;
+  }
+
+  .modal-custom .modal-dialog {
+    max-width: 900px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .modal-body {
+    border-radius: 24px !important;
+  }
+
+  .request-form-container {
+    width: 562px !important;
+  }
+
+  .form-submit {
+    height: 56px !important;
+  }
+
+  #send-request {
+    height: 56px !important;
+  }
+
+  .request-form-img {
+    height: 578px !important;
+  }
+
+  .modal-custom .modal-dialog {
+    max-width: 900px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .modal-custom .modal-content {
+    height: 500px !important;
+    border-radius: 24px !important;
+
+    & .heading {
+      font-size: 20px;
+    }
+
+    & .disclaimer {
+      font-size: 18px;
+    }
+
+    & .modal-form-text {
+      margin-block-end: 0 !important;
+    }
+
+    & form {
+      margin-block-start: 0.5rem !important;
+    }
+  }
+
+  .modal-body {
+    border-radius: 24px !important;
+  }
+
+  .modal-form-img {
+    height: 578px !important;
+  }
+
+  .modal-form-text {
+    margin-bottom: 24px !important;
+  }
+
+  .modal-form-info-text {
+    margin-top: 24px !important;
+  }
+}
+
+@media (max-width: 1439.98px) {
+  .d-lg-flex {
+    display: none !important;
+  }
+}
+
+.logo {
+  width: 55%;
+  max-width: 133px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.btn-custom {
+  background-color: #F6F6F6;
+  color: #00AB55;
+  font-size: 17px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-left: 24px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  transition: background-color 0.3s ease;
+  height: 50px;
+  width: 116px;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.btn-custom:focus {
+  box-shadow: none !important;
+}
+
+.btn-custom:hover {
+  background-color: #FFFFFF;
+  color: #00AB55;
+}
+
+.btn:first-child:active {
+  border-color: transparent;
+}
+
+#login-btn:hover {
+  background-color: #00AB55 !important;
+  color: #ffffff !important;
+}
+
+.main-banner-btns-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3
+}
+
+#bannerBtns {
+  background-color: #F6F6F6;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  border-radius: 26px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: 1rem;
+  height: 52px;
+}
+
+#bannerBtns:hover {
+  background-color: #9A9A9A !important;
+  color: #ffffff !important;
+}
+
+#contactUs {
+  background-color: #00AB55;
+  color: #FFFFFF;
+  font-size: 22px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  border-radius: 32px;
+  margin-left: 0;
+  margin-top: 2rem;
+  height: 64px;
+  width: 100%;
+}
+
+#contactUs:hover {
+  background-color: #00C863 !important;
+}
+
+.contactUsMainBanner {
+  width: 50% !important;
+}
+
+#send-request {
+  background-color: #9A9A9A;
+  color: #FFFFFF;
+  font-size: 22px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  border-radius: 38px;
+  margin-left: 0;
+  margin-top: 0.5rem;
+  height: 76px;
+}
+
+.vl {
+  border-left: 1px solid #FFFFFF;
+  height: 1rem;
+  margin: 0 0.5rem;
+}
+
+.header {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(50px);
+  margin: 1rem;
+  border: 1px solid transparent;
+  border-radius: 32px;
+}
+
+.phone {
+  color: #F6F6F6;
+}
+
+.phone:hover {
+  color: #FFFFFF;
+}
+
+.phone-number {
+  font-size: 17px;
+}
+
+.tooltip-inner {
+  background-color: #FFFFFF;
+  color: #00AB55;
+  border-radius: 8px 0 8px 8px;
+  padding: 0.4rem;
+  padding-left: 0.8rem;
+  font-size: 11px;
+  text-align: left;
+  margin-left: 8rem;
+  max-width: 240px;
+}
+
+.tooltip {
+  --bs-tooltip-arrow-width: 0em;
+  --bs-tooltip-arrow-height: 0em;
+}
+
+.banner-wrapper {
+  width: 100%;
+  height: 781px;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-wrapper-div {
+  border: none !important;
+}
+
+.video-banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border: 1px solid transparent;
+  border-radius: 32px;
+}
+
+.mobile-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.main-banner-card {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(50px);
+  color: #ffffff;
+  margin: 15rem 1rem 1rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 36px;
+  padding: 32px;
+}
+
+.main-banner-btns-container {
+  margin-bottom: 32px;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: 1%;
+  padding: 0.3rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.disclaimer {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1%;
+}
+
+.main {
+  background-color: white;
+  color: #000000;
+  border: 1px solid transparent;
+  border-radius: 44px;
+}
+
+.coins {
+  background-color: white;
+  opacity: .8;
+  color: #000000;
+  border: 1px solid transparent;
+  border-radius: 44px;
+}
+
+.monthly-benefit-card {
+  background-color: #F6F6F6;
+  border: 1px solid transparent;
+  border-radius: 18px;
+}
+
+.monthly-ben-titles {
+  font-size: 24px;
+  font-weight: 700;
+  width: 65%;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.5s forwards;
+}
+
+.monthly-benefits {
+  background-color: #FFFFFF;
+}
+
+.montly-benefits-cards {
+  background-color: #F6F6F6;
+  border: 1px solid #F6F6F6;
+}
+
+.montly-ben-icons {
+  width: 42px;
+  height: 42px;
+}
+
+.about-container {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.about-card-gaps {
+  margin-top: 20px;
+}
+
+.about-numbers {
+  font-size: 22px;
+}
+
+.about-shorts {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.about-btn {
+  background-color: #00AB55 !important;
+  height: 100%;
+  min-height: 80px;
+  min-width: 50px;
+}
+
+.about-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0%;
+}
+
+.about-image {
+  width: 172px;
+  height: 100px;
+  border-radius: 20px;
+  max-width: fit-content;
+}
+
+.img-coins {
+  position: relative;
+  overflow: hidden;
+  width: 148px;
+  height: 148px;
+}
+
+.img-video {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 45%; /* Высота 16:9 */
+  border: 1px solid white;
+  border-radius: 24px;
+}
+
+.img-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.request-form-container {
+  max-width: 762px;
+}
+
+.request-form-img {
+  height: 638px;
+  border: 1px solid transparent;
+  border-radius: 44px;
+}
+
+.request-form-text {
+  line-height: 140%;
+  font-size: 22px;
+  letter-spacing: 1%;
+  width: 75%;
+  margin-bottom: 56px;
+  margin-top: 12px;
+}
+
+.request-form-info-text {
+  color: #9A9A9A;
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 24px;
+  margin-bottom: 56px;
+}
+
+.request-form-icon-input-wrapper {
+  position: relative;
+}
+
+.request-form-icon-wrapper {
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 4%;
+}
+
+.request-form-icon-input-wrapper:focus-within .request-form-icon {
+  transition: filter 0.3s ease;
+  filter: brightness(0);
+}
+
+.form-submit {
+  background-color: #F6F6F6;
+  border: 1px solid #F6F6F6;
+  border-radius: 32px;
+  margin-bottom: 24px;
+  padding: 24px;
+  padding-left: 60px;
+}
+
+.form-submit::placeholder {
+  color: rgba(154, 154, 154, 1);
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.form-control {
+  color: black;
+  font-weight: bold;
+}
+
+.form-control:focus {
+  background-color: #F6F6F6;
+  border-color: #F6F6F6;
+  box-shadow: none;
+}
+
+.text-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.7s ease-in-out;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.text-container.open {
+  max-height: 1500px;
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.ourbenefits-download-btns {
+  color: #00AB55;
+  line-height: 1;
+  text-decoration: none;
+  font-size: 22px;
+  padding-left: 0;
+}
+
+.btn-link:hover {
+  color: #00AB55 !important;
+  text-decoration: underline;
+}
+
+.our-benefits-heading {
+  font-weight: 700;
+  font-size: 24px;
+  padding: 0.3rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.our-benefits-img {
+  max-width: 124px;
+}
+
+.map-btn {
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+  pointer-events: none;
+  cursor: default;
+  opacity: 1 !important;
+}
+
+.map-iframe iframe {
+  height: 720px;
+}
+
+.main-banner-btn-contactUs {
+  margin-top: 3em;
+}
+
+.icon-container {
+  margin-top: 32px;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  position: absolute;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hidden.icon {
+  transform: rotate(-90deg);
+}
+
+.itooltip {
+  width: 6%;
+}
+
+.itooltip-phone {
+  width: 28px;
+  height: 28px;
+}
+
+.info-footer {
+  background-color: #F2F2F2;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  color: #9A9A9A;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1
+}
+
+.faq-numbers {
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 2%;
+  color: rgba(145, 158, 171, 0.56);
+}
+
+.faq-titles {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: start
+}
+
+.faq-download-btns {
+  margin-left: 1.2em;
+}
+
+.footer-img {
+  height: 24px;
+  width: 24px;
+}
+
+.modal-custom .modal-dialog {
+  max-width: 1400px;
+  width: 100%;
+}
+
+.modal-custom .modal-content {
+  height: 640px;
+  border: 1px solid none;
+  border-radius: 44px;
+}
+
+.modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  padding: 0;
+  border: 1px solid none;
+  border-radius: 44px;
+}
+
+.modal-form-text {
+  line-height: 140%;
+  font-size: 22px;
+  letter-spacing: 1%;
+  width: 75%;
+  margin-bottom: 56px;
+  margin-top: 12px;
+}
+
+.modal-form-info-text {
+  color: #9A9A9A;
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 24px;
+  margin-bottom: 56px;
+}

@@ -1,0 +1,147 @@
+.account-reports {
+  & .view {
+    & .header-wrapper {
+      @apply mb-1 px-4 pt-4 flex justify-end items-center;
+      position: unset;
+    }
+
+    & .content-wrapper {
+      @apply px-4;
+    }
+
+    & .actions-wrapper {
+      @apply px-4;
+    }
+
+
+    &.entry {
+      .content {
+        p {
+          @apply text-lg;
+        }
+      }
+
+      .warning {
+        @apply w-full flex items-center justify-center;
+
+        .icon-wrapper {
+          @apply flex items-center justify-center;
+          flex: 1;
+
+          svg {
+            color: red;
+            width: 50px;
+            height: 50px;
+          }
+        }
+
+        .text {
+          @apply text-xs;
+          flex: 11;
+        }
+      }
+    }
+
+    &.select-account {
+      .content-wrapper {
+        @apply px-12;
+
+        .content {
+          .title {
+            p {
+              @apply text-2xl mb-5;
+            }
+          }
+
+          .accounts-wrapper {
+            @apply w-full flex flex-col items-center justify-between gap-y-5;
+
+            .account {
+              @apply px-4 py-2 flex flex-col items-center w-full max-w-[300px] border-2 rounded-2xl cursor-pointer;
+
+              &:hover {
+                @apply backdrop-brightness-95;
+              }
+
+              &.filled {
+                @apply bg-lime-200;
+
+                p {
+                  @apply text-lime-600;
+                }
+              }
+            }
+          }
+
+          .warning {
+            @apply w-full flex items-center justify-center;
+
+            .icon-wrapper {
+              @apply flex items-center justify-center;
+              flex: 1;
+
+              svg {
+                color: red;
+                width: 50px;
+                height: 50px;
+              }
+            }
+
+            .text {
+              @apply text-xs;
+              flex: 11;
+            }
+          }
+        }
+      }
+    }
+
+    &.assign-list {
+      .content-wrapper {
+        @apply pb-2;
+      }
+
+      .actions-wrapper {
+        @apply pt-2;
+      }
+
+      .content-inner {
+        @apply flex flex-col items-center justify-between gap-y-5;
+
+        .selected-account {
+          @apply px-4 py-2 flex flex-col items-center max-w-[300px] w-full;
+        }
+
+        .upload-button {
+          width: 250px;
+          height: 80px;
+          cursor: pointer;
+
+          span {
+            @apply w-full h-full rounded-2xl text-lg;
+          }
+        }
+
+        .warning {
+          @apply w-full flex items-center justify-center;
+
+          .icon-wrapper {
+            @apply flex items-center justify-center;
+            flex: 1;
+
+            svg {
+              color: red;
+              width: 50px;
+              height: 50px;
+            }
+          }
+
+          .text {
+            @apply text-xs;
+            flex: 11;
+          }
+        }
+      }
+    }
+  }
+}

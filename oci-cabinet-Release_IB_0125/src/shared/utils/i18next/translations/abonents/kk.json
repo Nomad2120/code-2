@@ -1,0 +1,31 @@
+{
+  "grid": {
+    "number": "Нөмірі",
+    "personalAcc": "ДШ МИБ",
+    "ercAccount": "ДШ ЕРЦ",
+    "square": "Шаршы",
+    "effectiveSquare": "Пайдалы шаршы",
+    "floor": "Қабат",
+    "name": "Меншік иесі",
+    "owner": "Меншік иесі",
+    "idn": "БСН/ЖСН",
+    "phone": "Телефон",
+    "areaType": "Түр",
+    "livingFact": "Тұру",
+    "livingJur": "Тіркелген"
+  },
+  "areaTypes": {
+    "nonResidental": "Тұрғын емес",
+    "residental": "Тұрғылықты",
+    "basement": "Жертөле"
+  },
+  "validation": {
+    "abonentId": "Жазылушы идентификаторы табылмады",
+    "area": "Бөлме түрі көрсетілмеген",
+    "flat": "Еден көрсетілмеген",
+    "square": "Аймақ көрсетілмеген",
+    "osiId": "Ось идентификаторы жоқ",
+    "requiredField": "Міндетті өріс"
+  },
+  "externalAbonent": "Жалға алу ({{name}})"
+}

@@ -1,0 +1,1 @@
+export { RegistrationDocumentsViewModel } from './ViewModel';

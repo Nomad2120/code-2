@@ -1,0 +1,31 @@
+{
+  "externalAbonent": "Аренда({{name}})",
+  "grid": {
+    "number": "Номер",
+    "personalAcc": "ЛС ОСИ",
+    "ercAccount": "ЛС ЕРЦ",
+    "square": "Площадь",
+    "effectiveSquare": "Полез. площадь",
+    "floor": "Этаж",
+    "name": "Собственник",
+    "owner": "Владелец",
+    "idn": "БИН/ИИН",
+    "phone": "Телефон",
+    "areaType": "Тип",
+    "livingFact": "Проживают",
+    "livingJur": "Зарегистрировано"
+  },
+  "areaTypes": {
+    "nonResidental": "Нежилое",
+    "residental": "Жилое",
+    "basement": "Подвал"
+  },
+  "validation": {
+    "abonentId": "Не найден id абонента",
+    "area": "Не указан тип помещения",
+    "flat": "Не указан этаж",
+    "square": "Не указана площадь",
+    "osiId": "Отсутствует id ОСИ",
+    "requiredField": "Обязательное поле"
+  }
+}

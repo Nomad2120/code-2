@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@/*" : ["./*"],
+      "@app/*" : ["app/*"],
+      "@pages/*": ["pages/*"],
+      "@widgets/*": ["widgets/*"],
+      "@features/*": ["features/*"],
+      "@entities/*": ["entities/*"],
+      "@shared/*": ["shared/*"],
+      "@mobx/*": ["app/stores/mobx/*"],
+      "@redux/*": ["app/stores/redux/*"],
+      "@stores/*": ["app/stores/*"]
+    }
+  }
+}

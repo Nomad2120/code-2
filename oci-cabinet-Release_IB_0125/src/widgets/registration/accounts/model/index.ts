@@ -1,0 +1,1 @@
+export { RegistrationAccountsWidgetViewModel } from './ViewModel';

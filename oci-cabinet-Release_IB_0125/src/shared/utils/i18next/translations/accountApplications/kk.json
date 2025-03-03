@@ -1,0 +1,26 @@
+{
+  "header": "Қолданбалар тізімі",
+  "fullInfo": {
+    "header": "Қолданба туралы ақпарат",
+    "create": {
+      "header": "Аккаунты құру",
+      "account": "Ұпай: {{account}}",
+      "accountType": "Есептік жазба түрі: {{accountType}}",
+      "bic": "Банк: {{bic}}"
+    },
+    "update": {
+      "header": "Есептік жазбаны өзгерту",
+      "accountChange": "Есептік жазбаны {{oldAccount}} орнына {{newAccount}} етіп өзгерту",
+      "accountBicChange": "Банк {{oldBic}}-ден {{newBic}}-ға ауыстырылуда",
+      "accountType": "Есептік жазба түрі: {{accountType}}"
+    },
+    "docs": {
+      "attach": {
+        "header": "Құжатты тіркеу",
+        "dndText": "Құжаттарды осы жерге жылжытыңыз немесе құжаттарды таңдау үшін басыңыз"
+      },
+      "header": "Қосымша құжаттар"
+    },
+    "rejectText": "Өтінішті қабылдамау себебі:"
+  }
+}

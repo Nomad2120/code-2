@@ -1,0 +1,69 @@
+{
+  "enablePenalties": "Айыппұлды есептеуді қосыңыз",
+  "addServiceTitle": "Қызметті қосу",
+  "service": "Қызмет",
+  "accrualMethod": "Есептеу әдісі",
+  "tariff": "Тариф, теңге",
+  "editServiceTitle": "Қызметті өңдеу",
+  "deleteService": "Қызметті жою",
+  "title": "Есептеу жоспары",
+  "validation": {
+    "name": {
+      "required": "Атын енгізіңіз"
+    },
+    "accrualMethod": {
+      "required": "Есептеу әдісін көрсетіңіз"
+    },
+    "tariff": {
+      "mustBePositive": "Мән оң сан болуы керек",
+      "required": "Мән енгізіңіз",
+      "empty": "Тариф көрсетілмеген"
+    },
+    "abonents": {
+      "empty": "Ешбір жазылушы таңдалмаған"
+    },
+    "arendator": {
+      "required": "Жалға алушыны көрсетіңіз"
+    },
+    "external": {
+      "name": {
+        "required": "Атын енгізіңіз"
+      },
+      "phone": {
+        "short": "Нөмір толық емес",
+        "error": "Нөмір дұрыс емес",
+        "required": "Байланыс телефон нөміріңізді енгізіңіз"
+      },
+      "bin": {
+        "error": "БСН/ЖСН қате көрсетілген",
+        "required": "БСН/ЖСН енгізіңіз"
+      },
+      "flat": {
+        "required": "Бөлмені көрсетіңіз"
+      }
+    }
+  },
+  "status": {
+    "inactive": "Белсенді емес",
+    "notReady": "Дайын емес",
+    "ready": "Дайын"
+  },
+  "arendator": "Жалға алушы",
+  "createArendator": "Жалға алушыны құру",
+  "sumOnMonth": "Айлық сома",
+  "accuralDate": {
+    "currentDate": "Ағымдағы есептеу күні: әр айдың {{date}} күні",
+    "changeTo": "Өзгерту:",
+    "selectDayLabel": "Күнді таңдаңыз",
+    "dialog": {
+      "title": "Есептеу күнін өзгерту",
+      "currentDate": "Ағымдағы есептеу күні: әр айдың {{date}} күні",
+      "newDate": "Жаңа күн: әр айдың {{date}} күні"
+    }
+  },
+  "createService": "Қызмет жасау",
+  "remakeAccruals": {
+    "actionBtn": "Көбірек қосыңыз",
+    "dialogText": "Бұрыннан жасалған есептеулерді жойып, жаңаларын жасағыңыз келе ме?"
+  }
+}

@@ -1,0 +1,82 @@
+.home-navbar {
+  @apply flex justify-center items-center flex-col;
+  height: 58px;
+  background-color: #fff;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-image: none;
+  width: 100%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  position: fixed;
+  z-index: 1100;
+  top: 0;
+  left: auto;
+  right: 0;
+  color: #fff;
+  box-shadow: none;
+
+  &.shadow {
+    box-shadow: rgba(145, 158, 171, 0.24) 0 8px 16px 0;
+  }
+
+  .container {
+    @apply flex items-center justify-between px-6 my-2 h-full w-full;
+    max-width: 1536px;
+
+    :global {
+      .logo-wrapper {
+        width: 90px;
+        height: 35px;
+
+        a {
+          @apply flex w-full h-full;
+        }
+      }
+
+      .content-wrapper {
+        @apply flex justify-between items-center gap-4 h-full;
+      }
+
+      .button-panel {
+        @apply flex justify-between items-center gap-2 h-full;
+
+        .button {
+          height: 100%;
+          min-width: 64px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          box-sizing: border-box;
+          -webkit-tap-highlight-color: transparent;
+          background-color: transparent;
+          outline: 0;
+          margin: 0;
+          cursor: pointer;
+          user-select: none;
+          vertical-align: middle;
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          text-decoration: none;
+          font-weight: 700;
+          line-height: 1.7142857142857142;
+          font-size: 0.8125rem;
+          text-transform: capitalize;
+          font-family: Public Sans, sans-serif;
+          padding: 3px 9px;
+          border-radius: 8px;
+          transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+          border: 1px solid rgba(0, 171, 85, 0.5);
+          color: #00AB55;
+
+          &.contained {
+            background-color: #00AB55;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+
+}
